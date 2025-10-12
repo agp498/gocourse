@@ -24,7 +24,7 @@ type App struct {
 }
 
 func NewApp() *App {
-	db, err := sql.Open("sqlite3", "shorter.db")
+	db, err := sql.Open("sqlite3", "../shorter.db")
 
 	if err != nil {
 		log.Fatal(err)
